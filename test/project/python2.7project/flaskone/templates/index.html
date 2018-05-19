@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+{% for k in comment %}
+<p>{{k.user}}:{{k.content}}</p>
+{% endfor %}
+<p>({{ comment|length}})</p>
+</body>
+</html>
